@@ -1,0 +1,163 @@
+/* Usar nombres descriptivos para clases y IDs */
+/* Estilos para CSS avanzado*/
+/* PALETA COLORES 
+	Hex	RGB
+#ffdef2	(255,222,242)
+#f2e2ff	(242,226,255)
+#e2eeff	(226,238,255)
+#ddfffc	(221,255,252)
+#ffffe3	(255,255,227)
+*/
+
+/* Imagen de fonto*/
+body{
+    background-color: rgb(121, 121, 121);
+    background-image: url(https://wallpapercg.com/download/erling-haaland-4k-wallpaper-3840x2160-16981.jpeg);
+    background-size: contain;
+}
+#main-header{
+    font-family: Verdana;
+    background-color:rgb(150, 102, 189); /* asi color externo*/
+    color: beige;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+}
+#mi-popover{background-color: rgb(80, 37, 37);
+   color: beige;
+   font-size: 30px;
+   border-radius: 10px;
+font-family: monospace;
+}
+.button-style{background-color: rgb(189, 179, 146);
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+   border-radius: 10px;
+font-family: 'Courier New', Courier, monospace;
+}
+.block{
+background-color: chocolate;
+color: aliceblue;
+display: block;
+}
+.inline{
+background-color: chartreuse;
+display: inline;
+}
+.hidden{
+    background-color: cyan;
+    display: none; /* si lo quitamos regresa*/
+}
+.inline-block{
+    background-color: blue;
+    display: inline-block;
+} /* queda al lado*/
+
+/* POSITION*/
+.relative{
+    background-color: darkorchid;
+    position:relative;
+    left: 20px;
+}
+.absolute{
+ background-color: rgb(82, 57, 94);
+    position:absolute;
+    left: 20px;
+    top: 100px;
+}
+.fixed{
+    background-color: rgb(229, 231, 104);
+    position:fixed;
+    right: 10px;
+}
+.sticky{
+    background-color: rgb(189, 156, 206);
+    position:sticky;
+}
+.container{
+    background-color: darkseagreen;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.content{
+    color: rgb(1, 5, 5);
+}
+.highlight{
+    font-family: Verdana;
+    background-color:rgb(161, 218, 252); 
+    color: black;
+    text-align: center;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+}
+.hightlight_item{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(219, 255, 255); background-color: rgb(29, 44, 44); opacity: 80%;
+}
+/* Aplicacion de la metodologia BEM*/
+.navbar_item{
+    background-color: rgb(178, 240, 219);
+    display: inline-block; /* Alinear lista como bloques individual*/
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(38, 77, 114);
+}
+/* Solo se manda llamar la ultima parte de la clase para que DESTAQUE*/
+.navbar_item--active{
+    background-color: rgb(43, 231, 191);
+}
+.button{
+    border: none;
+    cursor: pointer;
+    background-color: rgb(138, 41, 41);
+    color: azure;
+    font-size: 30px;
+}
+.button--large{
+    padding: 20px 40px;
+    border-radius: 10px;
+
+}
+.button_icon{
+    margin-right: 20%;
+}
+.rate{
+    font-family: Verdana;
+    background-color:rgb(41, 90, 117); 
+    color: rgb(212, 198, 158);
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 5px;
+}
+/* Hechizos de ajuste */
+/* Estilos base para la pantalla más pequeña */
+body {
+  font-size: 16px;
+}
+
+/* Estilos para pantallas medianas (por ejemplo, tablets) */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* Estilos para pantallas grandes (por ejemplo, desktops) */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+/* Puedes agregar más rangos de ancho de pantalla si lo necesitas */
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+
